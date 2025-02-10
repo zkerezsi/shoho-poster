@@ -1,83 +1,81 @@
 <!DOCTYPE html>
 <html lang="hu">
-
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="titok" content="Szeretlek Sophie!">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/x-icon" href="/favicon.ico">
-  <title>Valentín nap</title>
-  <style>
-    html {
-      overflow: hidden;
-      font-size: 16px;
-    }
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="zsofi" content="Nem akarok tőled semmit, csak hogy boldog legyél. Ha kellek neked el tudsz érni bármikor.">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/x-icon" href="/shoho-poster/favicon.ico">
+<title>Shoho poster</title>
+<style>
+  html {
+    overflow: hidden;
+    font-size: 16px;
+  }
 
-    @media screen and (max-width: 600px) {
-      html {
-        font-size: 2.5vw;
-      }
+  @media screen and (max-width: 600px) {
+  html {
+       font-size: 2.5vw;
     }
+  }
+  
+  body {
+    margin: 0;      height: 100vh;
+    width: 100vw;
+    background-color: #e5e5f7;
+    opacity: 1;   
+    background-size: 10px 10px;
+    background-image: repeating-linear-gradient(45deg, #ff9fff 0, #ff9fff 1px, #e5e5f7 0, #e5e5f7 50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  div {
+    padding: 0px 16px;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas: 'cell';
+    align-items: flex-end;
+    justify-items: start;
+  }
 
-    body {
-      margin: 0;
-      height: 100vh;
-      width: 100vw;
-      background-color: #e5e5f7;
-      opacity: 1;
-      background-size: 10px 10px;
-      background-image: repeating-linear-gradient(45deg, #ff9fff 0, #ff9fff 1px, #e5e5f7 0, #e5e5f7 50%);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
+  img {
+    max-width: 600px;
+    border: 1px solid black;
+    grid-area: cell;
+  }
 
-    div {
-      padding: 0px 16px;
-      display: grid;
-      grid-template-rows: 1fr;
-      grid-template-columns: 1fr;
-      grid-template-areas: 'cell';
-      align-items: flex-end;
-      justify-items: start;
-    }
-
+  @media screen and (max-width: 600px) {
     img {
-      max-width: 600px;
-      border: 1px solid black;
-      grid-area: cell;
+      width: 100%
     }
+  }
 
-    @media screen and (max-width: 600px) {
-      img {
-        width: 100%
-      }
-    }
+  @font-face {
+    font-family: KouzanBrushFontSousyo;
+    src: url(/shoho-poster/KouzanBrushFontSousyo.ttf);
+  }
 
-    @font-face {
-      font-family: KouzanBrushFontSousyo;
-      src: url(/KouzanBrushFontSousyo.ttf);
-    }
+  #japanese {
+    margin: 0rem 4rem;
+    font-family: KouzanBrushFontSousyo;
+    font-size: 2.5rem;
+    grid-area: cell;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    align-self: center;
+  }
 
-    #japanese {
-      margin: 0rem 4rem;
-      font-family: KouzanBrushFontSousyo;
-      font-size: 2.5rem;
-      grid-area: cell;
-      writing-mode: vertical-rl;
-      text-orientation: upright;
-      align-self: center;
-    }
-
-    #hungarian {
-      margin: 1.4rem;
-      font-family: serif;
-      grid-area: cell;
-      justify-self: end;
-      font-style: italic;
-    }
-  </style>
+  #hungarian {
+    margin: 1.4rem;
+    font-family: serif;
+    grid-area: cell;
+    justify-self: end;
+    font-style: italic;
+  }
+</style>
 </head>
 
 <!-- 斯う活て 居るも不思議ぞ 花の陰
@@ -87,16 +85,14 @@ to be alive like this
 is a wonder...
 blossom shade 
 
-Kobayashi Issa (小林 一茶)
+Kobayashi Issha (小林 一茶)
 translated by: David G. Lanoue-->
 
 <body>
   <div>
     <img src="background.jpg">
     <p id="japanese">斯う活て<br>居るも不思議ぞ<br>花の陰</p>
-    <p id="hungarian">&bdquo;Így élni<br>egy csoda...<br>gyümölcsfavirágok árnyéka&rdquo;<br>&ndash; Kobayashi Issa (小林
-      一茶)</p>
+    <p id="hungarian">&bdquo;Így élni<br>egy csoda...<br>gyümölcsfavirágok árnyéka&rdquo;<br>&ndash; Kobayashi Issha (小林一茶)</p>
   </div>
 </body>
-
 </html>
